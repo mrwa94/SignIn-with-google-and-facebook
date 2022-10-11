@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1B79FD42F04CA88E991040 /* Pods_RegesterAndLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718E0D3946D10F43135A7FC4 /* Pods_RegesterAndLogin.framework */; };
 		9DEEC67E28F1F1B900951411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEC67D28F1F1B900951411 /* AppDelegate.swift */; };
 		9DEEC68028F1F1B900951411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEC67F28F1F1B900951411 /* SceneDelegate.swift */; };
 		9DEEC68228F1F1B900951411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEC68128F1F1B900951411 /* ViewController.swift */; };
 		9DEEC68528F1F1B900951411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEC68328F1F1B900951411 /* Main.storyboard */; };
 		9DEEC68728F1F1BC00951411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEC68628F1F1BC00951411 /* Assets.xcassets */; };
 		9DEEC68A28F1F1BC00951411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEC68828F1F1BC00951411 /* LaunchScreen.storyboard */; };
+		9DEEC69528F1FED800951411 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEC69428F1FED800951411 /* GoogleService-Info.plist */; };
+		9DEEC69828F204CE00951411 /* GoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEC69728F204CE00951411 /* GoogleViewController.swift */; };
+		9DEEC69B28F4774100951411 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEEC69A28F4774100951411 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		718E0D3946D10F43135A7FC4 /* Pods_RegesterAndLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegesterAndLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEEC67A28F1F1B900951411 /* RegesterAndLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegesterAndLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEEC67D28F1F1B900951411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEEC67F28F1F1B900951411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,12 @@
 		9DEEC68628F1F1BC00951411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DEEC68928F1F1BC00951411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DEEC68B28F1F1BC00951411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEEC69428F1FED800951411 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9DEEC69728F204CE00951411 /* GoogleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleViewController.swift; sourceTree = "<group>"; };
+		9DEEC69928F4774100951411 /* RegesterAndLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RegesterAndLogin.entitlements; sourceTree = "<group>"; };
+		9DEEC69A28F4774100951411 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BC50A8421350EEBD81D6CD93 /* Pods-RegesterAndLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegesterAndLogin.release.xcconfig"; path = "Target Support Files/Pods-RegesterAndLogin/Pods-RegesterAndLogin.release.xcconfig"; sourceTree = "<group>"; };
+		BE96086FFC6ABD12BCFCADA1 /* Pods-RegesterAndLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegesterAndLogin.debug.xcconfig"; path = "Target Support Files/Pods-RegesterAndLogin/Pods-RegesterAndLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1B79FD42F04CA88E991040 /* Pods_RegesterAndLogin.framework in Frameworks */,
+				9DEEC69B28F4774100951411 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25887B945479064FD9C65E0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE96086FFC6ABD12BCFCADA1 /* Pods-RegesterAndLogin.debug.xcconfig */,
+				BC50A8421350EEBD81D6CD93 /* Pods-RegesterAndLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4BEB7B8DCB3AC969DF6FD2FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DEEC69A28F4774100951411 /* HealthKit.framework */,
+				718E0D3946D10F43135A7FC4 /* Pods_RegesterAndLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DEEC67128F1F1B900951411 = {
 			isa = PBXGroup;
 			children = (
+				9DEEC69628F2049A00951411 /* views */,
+				9DEEC69428F1FED800951411 /* GoogleService-Info.plist */,
 				9DEEC67C28F1F1B900951411 /* RegesterAndLogin */,
 				9DEEC67B28F1F1B900951411 /* Products */,
+				25887B945479064FD9C65E0F /* Pods */,
+				4BEB7B8DCB3AC969DF6FD2FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +91,24 @@
 		9DEEC67C28F1F1B900951411 /* RegesterAndLogin */ = {
 			isa = PBXGroup;
 			children = (
+				9DEEC69928F4774100951411 /* RegesterAndLogin.entitlements */,
 				9DEEC67D28F1F1B900951411 /* AppDelegate.swift */,
 				9DEEC67F28F1F1B900951411 /* SceneDelegate.swift */,
-				9DEEC68128F1F1B900951411 /* ViewController.swift */,
 				9DEEC68328F1F1B900951411 /* Main.storyboard */,
 				9DEEC68628F1F1BC00951411 /* Assets.xcassets */,
 				9DEEC68828F1F1BC00951411 /* LaunchScreen.storyboard */,
 				9DEEC68B28F1F1BC00951411 /* Info.plist */,
 			);
 			path = RegesterAndLogin;
+			sourceTree = "<group>";
+		};
+		9DEEC69628F2049A00951411 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9DEEC68128F1F1B900951411 /* ViewController.swift */,
+				9DEEC69728F204CE00951411 /* GoogleViewController.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DEEC68E28F1F1BC00951411 /* Build configuration list for PBXNativeTarget "RegesterAndLogin" */;
 			buildPhases = (
+				0C965099C2D62B8DC4C33901 /* [CP] Check Pods Manifest.lock */,
 				9DEEC67628F1F1B900951411 /* Sources */,
 				9DEEC67728F1F1B900951411 /* Frameworks */,
 				9DEEC67828F1F1B900951411 /* Resources */,
+				78DD35CBCB3E7A5B3DEAB6DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +174,53 @@
 				9DEEC68A28F1F1BC00951411 /* LaunchScreen.storyboard in Resources */,
 				9DEEC68728F1F1BC00951411 /* Assets.xcassets in Resources */,
 				9DEEC68528F1F1B900951411 /* Main.storyboard in Resources */,
+				9DEEC69528F1FED800951411 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C965099C2D62B8DC4C33901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RegesterAndLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78DD35CBCB3E7A5B3DEAB6DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RegesterAndLogin/Pods-RegesterAndLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RegesterAndLogin/Pods-RegesterAndLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RegesterAndLogin/Pods-RegesterAndLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DEEC67628F1F1B900951411 /* Sources */ = {
@@ -139,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEEC68228F1F1B900951411 /* ViewController.swift in Sources */,
+				9DEEC69828F204CE00951411 /* GoogleViewController.swift in Sources */,
 				9DEEC67E28F1F1B900951411 /* AppDelegate.swift in Sources */,
 				9DEEC68028F1F1B900951411 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,9 +374,11 @@
 		};
 		9DEEC68F28F1F1BC00951411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE96086FFC6ABD12BCFCADA1 /* Pods-RegesterAndLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RegesterAndLogin/RegesterAndLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6M3ZFF262;
@@ -312,9 +404,11 @@
 		};
 		9DEEC69028F1F1BC00951411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC50A8421350EEBD81D6CD93 /* Pods-RegesterAndLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RegesterAndLogin/RegesterAndLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6M3ZFF262;
